@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Entrega Meu Pacote</string>
+    <string name="cadastro_nome">Nome</string>
+    <string name="cadastro_sobrenome">Sobrenome</string>
+    <string name="cadastro_email">E-mail</string>
+    <string name="cadastro_senha">Senha</string>
+    <string name="cadastro_cadastre_se">Cadastre-se</string>
+    <string name="pacote">Pacote</string>
+    <string name="possui_conta_entre_aqui">Já possui conta? Entre aqui.</string>
+</resources>
