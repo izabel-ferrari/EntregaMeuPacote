@@ -7,4 +7,10 @@
     <string name="cadastro_cadastre_se">Cadastre-se</string>
     <string name="pacote">Pacote</string>
     <string name="possui_conta_entre_aqui">Já possui conta? Entre aqui.</string>
+    <string name="title_activity_tela_inicial">tela_inicial</string>
+    <string name="solicitar_nova_entrega">Solicitar nova entrega</string>
+    <string name="acompanhar_entrega_em_andamento">Acompanhar entrega em andamento</string>
+    <string name="consultar_hist_de_entregas">Consultar histórico de entregas</string>
+    <string name="configurar_minha_conta">Configurar minha conta</string>
+    <string name="sair_da_minha_conta">Sair da minha conta</string>
 </resources>

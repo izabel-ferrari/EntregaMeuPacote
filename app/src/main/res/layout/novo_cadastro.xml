@@ -1,73 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorBackground"
-    android:padding="10dp"
     tools:context="pcs3853.entregameupacote.activities.novo_cadastro">
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <LinearLayout
+        <android.support.design.widget.AppBarLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:theme="@style/AppTheme.AppBarOverlay">
 
-            <EditText
-                android:id="@+id/editTextNome"
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/novo_cadastro_back"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/cadastro_nome"
-                android:inputType="textPersonName"
-                android:textColor="@color/colorPrimaryText"
-                android:textColorHint="@color/colorSecondaryText" />
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/colorPrimary"
+                app:navigationIcon="?attr/homeAsUpIndicator"
+                app:popupTheme="@style/AppTheme.PopupOverlay"
+                app:title="@string/app_name" />
 
-            <EditText
-                android:id="@+id/editTextSobrenome"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/cadastro_sobrenome"
-                android:inputType="textPersonName"
-                android:textColor="@color/colorPrimaryText"
-                android:textColorHint="@color/colorSecondaryText" />
+        </android.support.design.widget.AppBarLayout>
 
-            <EditText
-                android:id="@+id/editTextEmail"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/cadastro_email"
-                android:inputType="textEmailAddress"
-                android:textColor="@color/colorPrimaryText"
-                android:textColorHint="@color/colorSecondaryText" />
-
-            <EditText
-                android:id="@+id/editTextSenha"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/cadastro_senha"
-                android:inputType="textPassword"
-                android:textColor="@color/colorPrimaryText"
-                android:textColorHint="@color/colorSecondaryText" />
-
-        </LinearLayout>
-
-        <Button
-            android:id="@+id/buttonMainCadastre"
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_gravity="center"
-            android:background="@color/colorAccent"
-            android:gravity="center"
-            android:text="@string/cadastro_cadastre_se"
-            android:textColor="@color/colorPrimaryText" />
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
 
-    </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/novo_cadastro_input_nome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/cadastro_nome"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textColorHint="@color/colorSecondaryText" />
+
+                <EditText
+                    android:id="@+id/novo_cadastro_input_sobrenome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/cadastro_sobrenome"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textColorHint="@color/colorSecondaryText" />
+
+                <EditText
+                    android:id="@+id/novo_cadastro_input_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/cadastro_email"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textColorHint="@color/colorSecondaryText" />
+
+                <EditText
+                    android:id="@+id/novo_cadastro_input_senha"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/cadastro_senha"
+                    android:inputType="textPassword"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textColorHint="@color/colorSecondaryText" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/novo_cadastro_btn_cadastrar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="center"
+                android:background="@color/colorAccent"
+                android:gravity="center"
+                android:text="@string/cadastro_cadastre_se"
+                android:textColor="@color/colorPrimaryText" />
+
+        </RelativeLayout>
+    </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
