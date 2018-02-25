@@ -7,25 +7,21 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 
 import pcs3853.entregameupacote.R;
 
-public class novo_cadastro extends AppCompatActivity {
+public class nova_entrega extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.novo_cadastro);
+        setContentView(R.layout.nova_entrega);
 
         final Context context = this;
 
-        Toolbar toolbar = findViewById(R.id.novo_cadastro_toolbar);
-        EditText input_nome = findViewById(R.id.novo_cadastro_input_nome);
-        EditText input_sobrenome = findViewById(R.id.novo_cadastro_input_sobrenome);
-        EditText input_email = findViewById(R.id.novo_cadastro_input_email);
-        EditText input_senha = findViewById(R.id.novo_cadastro_input_senha);
-        Button btn_cadastrar = findViewById(R.id.novo_cadastro_btn_cadastrar);
+        Toolbar toolbar = findViewById(R.id.nova_entrega_toolbar);
+        Button entregar = findViewById(R.id.nova_entrega_entregar);
+        Button cancelar = findViewById(R.id.nova_entrega_cancelar);
 
         setSupportActionBar(toolbar);
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
@@ -35,7 +31,15 @@ public class novo_cadastro extends AppCompatActivity {
             }
         });
 
-        btn_cadastrar.setOnClickListener(new View.OnClickListener() {
+        entregar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(context, confirma_entrega.class);
+                context.startActivity(intent);
+            }
+        });
+
+        cancelar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(context, menu_usuario.class);
@@ -44,4 +48,5 @@ public class novo_cadastro extends AppCompatActivity {
         });
 
     }
+
 }

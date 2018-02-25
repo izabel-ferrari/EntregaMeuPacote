@@ -22,8 +22,36 @@
             android:name=".activities.novo_cadastro"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
-            android:name=".activities.tela_inicial"
+            android:name=".activities.menu_usuario"
             android:label="@string/title_activity_tela_inicial"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.login_usuario"
+            android:label="@string/title_activity_tela_login"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.nova_entrega"
+            android:label="@string/title_activity_nova_entrega_1"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.confirma_entrega"
+            android:label="@string/title_activity_confirma_entrega"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.finaliza_entrega"
+            android:label="@string/title_activity_finaliza_entrega"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.historico_entregas"
+            android:label="@string/title_activity_historico_entregas"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.detalhe_entrega"
+            android:label="@string/title_activity_detalhe_entrega"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.config_usuario"
+            android:label="@string/title_activity_config_usuario"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

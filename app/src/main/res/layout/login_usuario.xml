@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorBackground"
-    tools:context="pcs3853.entregameupacote.activities.novo_cadastro">
+    tools:context="pcs3853.entregameupacote.activities.login_usuario">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -18,7 +18,7 @@
             android:theme="@style/AppTheme.AppBarOverlay">
 
             <android.support.v7.widget.Toolbar
-                android:id="@+id/novo_cadastro_toolbar"
+                android:id="@+id/tela_login_toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
                 android:background="@color/colorPrimary"
@@ -32,7 +32,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:layout_margin="10dp">
+            android:padding="10dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -40,25 +40,7 @@
                 android:orientation="vertical">
 
                 <EditText
-                    android:id="@+id/novo_cadastro_input_nome"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="@string/cadastro_nome"
-                    android:inputType="textPersonName"
-                    android:textColor="@color/colorPrimaryText"
-                    android:textColorHint="@color/colorSecondaryText" />
-
-                <EditText
-                    android:id="@+id/novo_cadastro_input_sobrenome"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="@string/cadastro_sobrenome"
-                    android:inputType="textPersonName"
-                    android:textColor="@color/colorPrimaryText"
-                    android:textColorHint="@color/colorSecondaryText" />
-
-                <EditText
-                    android:id="@+id/novo_cadastro_input_email"
+                    android:id="@+id/tela_login_input_email"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/cadastro_email"
@@ -67,7 +49,7 @@
                     android:textColorHint="@color/colorSecondaryText" />
 
                 <EditText
-                    android:id="@+id/novo_cadastro_input_senha"
+                    android:id="@+id/tela_login_input_senha"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/cadastro_senha"
@@ -78,7 +60,7 @@
             </LinearLayout>
 
             <Button
-                android:id="@+id/novo_cadastro_btn_cadastrar"
+                android:id="@+id/tela_login_btn_entrar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
@@ -87,11 +69,12 @@
                 android:layout_gravity="center"
                 android:background="@color/colorAccent"
                 android:gravity="center"
-                android:text="@string/cadastro_cadastre_se"
+                android:text="@string/entrar"
                 android:textAllCaps="false"
                 android:textColor="@color/colorPrimaryLight" />
 
         </RelativeLayout>
     </LinearLayout>
 
-</android.support.constraint.ConstraintLayout>
+
+</android.support.design.widget.CoordinatorLayout>

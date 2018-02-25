@@ -11,21 +11,19 @@ import android.widget.EditText;
 
 import pcs3853.entregameupacote.R;
 
-public class novo_cadastro extends AppCompatActivity {
+public class login_usuario extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.novo_cadastro);
+        setContentView(R.layout.login_usuario);
 
         final Context context = this;
 
-        Toolbar toolbar = findViewById(R.id.novo_cadastro_toolbar);
-        EditText input_nome = findViewById(R.id.novo_cadastro_input_nome);
-        EditText input_sobrenome = findViewById(R.id.novo_cadastro_input_sobrenome);
-        EditText input_email = findViewById(R.id.novo_cadastro_input_email);
-        EditText input_senha = findViewById(R.id.novo_cadastro_input_senha);
-        Button btn_cadastrar = findViewById(R.id.novo_cadastro_btn_cadastrar);
+        Toolbar toolbar = findViewById(R.id.tela_login_toolbar);
+        EditText input_nome = findViewById(R.id.tela_login_input_email);
+        EditText input_sobrenome = findViewById(R.id.tela_login_input_senha);
+        Button btn_entrar = findViewById(R.id.tela_login_btn_entrar);
 
         setSupportActionBar(toolbar);
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
@@ -35,7 +33,7 @@ public class novo_cadastro extends AppCompatActivity {
             }
         });
 
-        btn_cadastrar.setOnClickListener(new View.OnClickListener() {
+        btn_entrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(context, menu_usuario.class);

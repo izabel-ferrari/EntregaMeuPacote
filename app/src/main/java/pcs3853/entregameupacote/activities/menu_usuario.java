@@ -1,6 +1,7 @@
 package pcs3853.entregameupacote.activities;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -10,16 +11,16 @@ import android.widget.Toast;
 
 import pcs3853.entregameupacote.R;
 
-public class tela_inicial extends AppCompatActivity {
+public class menu_usuario extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.tela_inicial);
+        setContentView(R.layout.menu_usuario);
 
         final Context context = this;
 
-        Toolbar toolbar = findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.tela_inicial_toolbar);
         Button btn_solicitar = findViewById(R.id.tela_inicial_btn_solicitar);
         Button btn_acompanhar = findViewById(R.id.tela_inicial_btn_acompanhar);
         Button btn_consultar = findViewById(R.id.tela_inicial_btn_consultar);
@@ -27,17 +28,12 @@ public class tela_inicial extends AppCompatActivity {
         Button btn_sair = findViewById(R.id.tela_inicial_btn_sair);
 
         setSupportActionBar(toolbar);
-        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(getBaseContext(), "Voltar", Toast.LENGTH_LONG).show();
-            }
-        });
 
         btn_solicitar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getBaseContext(), "Solicitar", Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(context, nova_entrega.class);
+                context.startActivity(intent);
             }
         });
 
@@ -50,21 +46,24 @@ public class tela_inicial extends AppCompatActivity {
         btn_consultar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getBaseContext(), "Consultar", Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(context, historico_entregas.class);
+                context.startActivity(intent);
             }
         });
 
         btn_configurar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getBaseContext(), "Configurar", Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(context, config_usuario.class);
+                context.startActivity(intent);
             }
         });
 
         btn_sair.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getBaseContext(), "Sair", Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(context, splash_screen.class);
+                context.startActivity(intent);
             }
         });
     }

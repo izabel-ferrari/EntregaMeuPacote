@@ -46,7 +46,8 @@
             android:background="@color/colorAccent"
             android:gravity="center"
             android:text="@string/cadastro_cadastre_se"
-            android:textColor="@color/colorPrimaryText" />
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimaryLight" />
 
         <TextView
             android:id="@+id/splash_screen_txt_entre_aqui"

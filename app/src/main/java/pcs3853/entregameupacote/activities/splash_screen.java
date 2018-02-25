@@ -2,13 +2,12 @@ package pcs3853.entregameupacote.activities;
 
 import android.content.Context;
 import android.content.Intent;
+import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import pcs3853.entregameupacote.R;
 
@@ -40,7 +39,8 @@ public class splash_screen extends AppCompatActivity {
         txt_entre_aqui.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getBaseContext(), "Entrar", Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(context, login_usuario.class);
+                context.startActivity(intent);
             }
         });
     }

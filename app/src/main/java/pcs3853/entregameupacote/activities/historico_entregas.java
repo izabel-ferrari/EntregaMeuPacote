@@ -6,26 +6,22 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import pcs3853.entregameupacote.R;
 
-public class novo_cadastro extends AppCompatActivity {
+public class historico_entregas extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.novo_cadastro);
+        setContentView(R.layout.historico_entregas);
 
         final Context context = this;
 
-        Toolbar toolbar = findViewById(R.id.novo_cadastro_toolbar);
-        EditText input_nome = findViewById(R.id.novo_cadastro_input_nome);
-        EditText input_sobrenome = findViewById(R.id.novo_cadastro_input_sobrenome);
-        EditText input_email = findViewById(R.id.novo_cadastro_input_email);
-        EditText input_senha = findViewById(R.id.novo_cadastro_input_senha);
-        Button btn_cadastrar = findViewById(R.id.novo_cadastro_btn_cadastrar);
+        Toolbar toolbar = findViewById(R.id.historico_entregas_toolbar);
+        TextView detalhes = findViewById(R.id.historico_detalhe_mais_detalhes);
 
         setSupportActionBar(toolbar);
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
@@ -35,13 +31,15 @@ public class novo_cadastro extends AppCompatActivity {
             }
         });
 
-        btn_cadastrar.setOnClickListener(new View.OnClickListener() {
+        detalhes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(context, menu_usuario.class);
+                Intent intent = new Intent(context, detalhe_entrega.class);
                 context.startActivity(intent);
             }
         });
 
+
     }
+
 }

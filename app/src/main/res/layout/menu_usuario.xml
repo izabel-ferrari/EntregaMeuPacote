@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="pcs3853.entregameupacote.activities.tela_inicial">
+    android:background="@color/colorBackground"
+    tools:context="pcs3853.entregameupacote.activities.menu_usuario">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -17,13 +18,12 @@
             android:theme="@style/AppTheme.AppBarOverlay">
 
             <android.support.v7.widget.Toolbar
-                android:id="@+id/toolbar"
+                android:id="@+id/tela_inicial_toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
                 android:background="?attr/colorPrimary"
                 app:popupTheme="@style/AppTheme.PopupOverlay"
                 app:title="@string/app_name" />
-                <!--app:navigationIcon="?attr/homeAsUpIndicator"-->
 
         </android.support.design.widget.AppBarLayout>
 
@@ -42,7 +42,8 @@
                 android:background="@color/colorAccent"
                 android:gravity="center"
                 android:text="@string/solicitar_nova_entrega"
-                android:textColor="@color/colorPrimaryText" />
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimaryLight" />
 
             <Button
                 android:id="@+id/tela_inicial_btn_acompanhar"
@@ -53,7 +54,8 @@
                 android:background="@color/colorAccent"
                 android:gravity="center"
                 android:text="@string/acompanhar_entrega_em_andamento"
-                android:textColor="@color/colorPrimaryText" />
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimaryLight" />
 
             <Button
                 android:id="@+id/tela_inicial_btn_consultar"
@@ -64,7 +66,8 @@
                 android:background="@color/colorAccent"
                 android:gravity="center"
                 android:text="@string/consultar_hist_de_entregas"
-                android:textColor="@color/colorPrimaryText" />
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimaryLight" />
 
             <Button
                 android:id="@+id/tela_inicial_btn_configurar"
@@ -75,7 +78,8 @@
                 android:background="@color/colorAccent"
                 android:gravity="center"
                 android:text="@string/configurar_minha_conta"
-                android:textColor="@color/colorPrimaryText" />
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimaryLight" />
 
             <Button
                 android:id="@+id/tela_inicial_btn_sair"
@@ -86,7 +90,8 @@
                 android:background="@color/colorAccent"
                 android:gravity="center"
                 android:text="@string/sair_da_minha_conta"
-                android:textColor="@color/colorPrimaryText" />
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimaryLight" />
 
         </LinearLayout>
     </LinearLayout>
